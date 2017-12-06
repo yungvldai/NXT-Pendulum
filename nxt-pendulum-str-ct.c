@@ -52,7 +52,7 @@ task main(){
 }
 
 float dif(dv tmp){
-    return (tmp.val - tmp.lval) / dt;
+    return (tmp.val - tmp.lval) / delay;
 }
 
 void set_v(dv tmp,float val){
