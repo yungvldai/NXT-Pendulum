@@ -12,6 +12,8 @@ float dif(float now,float past);
 //+----+-------+-------+------+-----------------+
 #define    k3      0  //  any | coefficient     |
 //+----+-------+-------+------+-----------------+
+#define   delay   30  //  ms  | cycle delay     |
+//+----+-------+-------+------+-----------------+
 
 int dt = 0;
 
@@ -38,7 +40,7 @@ task main(){
               k2 * dif(motor_rot_cnt_now,motor_rot_cnt_past) +
               k3 * dif(sensor_now,sensor_past);
          go(Fx);
-         Wait(1);
+         Wait(delay);
      }
 }
 
