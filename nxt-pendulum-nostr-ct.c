@@ -45,7 +45,7 @@ task main(){
 }
 
 float dif(float now,float past){
-    return (now - past) / dt;
+    return (now - past) / delay;
 }
 
 void go(int speed){
